@@ -1,0 +1,3 @@
+- make a function that is going to be called createAccordion
+  -following parameters: how many accordions to create,✅
+- Create a JSON file containing all the text content and headers for each accordion ✅
