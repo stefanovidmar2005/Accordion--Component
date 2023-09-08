@@ -12,7 +12,7 @@ const borderColors = ["#FB923C", "#818cf8", "#A78BFA", "#F472B6", "#4ADE80"];
 // note
 
 (async () => {
-  const response = await fetch("./data.json");
+  const response = await fetch("/data.json");
   const JSON = await response.json();
   return JSON;
 })().then((accordions) => {
