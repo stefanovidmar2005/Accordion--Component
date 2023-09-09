@@ -35,10 +35,17 @@ accordionContainer.addEventListener("click", (e) => {
   e.preventDefault();
   const target = e.target.closest(".plus");
   if (!target) return;
+  // Selections
+  const allAccordions = document.querySelectorAll(".accordion__box");
   const parent = target.parentElement.parentElement;
   const paragraphEl = parent.querySelector(".accordion__description");
   const header = parent.querySelector(".accordion__box-heading");
-  target.classList.toggle("active-accordion");
-  paragraphEl.classList.toggle("active-description");
-  header.classList.toggle("dark");
+  parent.classList.toggle(`active`);
+  target.classList.toggle("active");
+  paragraphEl.classList.toggle("active");
+  header.classList.toggle("active");
+
+  allAccordions.forEach((acc) => {
+    console.log(parent);
+  });
 });
